@@ -1,0 +1,6 @@
+{
+    "// WARNING": "DO NOT COMMIT THIS FILE TO GIT - Contains sensitive information",
+    "botToken": "",
+    "webhookUrl": "",
+    "openaiKey": ""
+}
