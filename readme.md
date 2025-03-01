@@ -1,6 +1,12 @@
 # chat modifier CRAZYYY
 what this bot does is it takes a webhook and will erase your messages and replace them with chatgpt ones, so you can make everyone talk like cavemen or... dare i say it... FURRIES!??!!??!?!?!!!
-# how to make it work
+
+## commands
+use /personality to pick a specific personality
+
+use /boring to pick a random personality
+
+## how to make it work
 copy settings.template.json to settings.json and fill in the values
 
 - create a bot using discord developer portal and put the bot token in the bot token section, then add the bot to the server you want it in
