@@ -5,6 +5,7 @@ import discord
 from requests import post, get
 import random
 import json
+import os
 
 PERSONALITY_YOUTUBER = """
 Rewrite this message as a hyperactive youtuber
@@ -111,8 +112,11 @@ global personality_name
 personality_name = ""
 system_prompt = f"{PERSONALITY_YOUTUBER}{GLOBAL_PROMPT_ENDING}"
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
+settings_path = os.path.join(script_dir, "settings.json")
+
 try:
-    with open('settings.json', 'r') as f:
+    with open(settings_path, 'r') as f:
         settings = json.load(f)
         WEBHOOK_URL = settings['webhookUrl']
         OPENAI_KEY = settings['openaiKey']
